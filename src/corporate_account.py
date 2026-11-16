@@ -30,4 +30,3 @@ corporate_account = debit_table.union(credit_table).distinct() \
     .select(final_columns).withColumnRenamed('Amount', 'TotalAmt')
 
 save_table_postgresql(corporate_account, 'corporate_account')
-
